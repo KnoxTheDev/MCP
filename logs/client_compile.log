@@ -1,0 +1,301 @@
+src\minecraft\net\minecraft\client\Minecraft.java:410: error: 'try' without 'catch', 'finally' or resource declarations
+            try
+            ^
+src\minecraft\net\minecraft\client\Minecraft.java:436: error: 'catch' without 'try'
+        catch (MinecraftError var12)
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:440: error: 'catch' without 'try'
+        catch (ReportedException reportedexception)
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:448: error: 'catch' without 'try'
+        catch (Throwable throwable1)
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:456: error: 'finally' without 'try'
+        finally
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:465: error: class, interface, or enum expected
+private void startGame() throws LWJGLException, IOException
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:468: error: class, interface, or enum expected
+    this.defaultResourcePacks.add(this.mcDefaultResourcePack);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:469: error: class, interface, or enum expected
+    this.startTimerHackThread();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:471: error: class, interface, or enum expected
+    if (this.gameSettings.overrideHeight > 0 && this.gameSettings.overrideWidth > 0)
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:474: error: class, interface, or enum expected
+        this.displayHeight = this.gameSettings.overrideHeight;
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:475: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:478: error: class, interface, or enum expected
+    this.setWindowIcon();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:479: error: class, interface, or enum expected
+    this.setInitialDisplayMode();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:480: error: class, interface, or enum expected
+    this.createDisplay();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:481: error: class, interface, or enum expected
+    OpenGlHelper.initializeTextures();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:482: error: class, interface, or enum expected
+    this.framebufferMc = new Framebuffer(this.displayWidth, this.displayHeight, true);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:483: error: class, interface, or enum expected
+    this.framebufferMc.setFramebufferColor(0.0F, 0.0F, 0.0F, 0.0F);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:484: error: class, interface, or enum expected
+    this.registerMetadataSerializers();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:485: error: class, interface, or enum expected
+    this.mcResourcePackRepository = new ResourcePackRepository(this.fileResourcepacks, new File(this.mcDataDir, "server-resource-packs"), this.mcDefaultResourcePack, this.metadataSerializer_, this.gameSettings);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:486: error: class, interface, or enum expected
+    this.mcResourceManager = new SimpleReloadableResourceManager(this.metadataSerializer_);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:487: error: class, interface, or enum expected
+    this.mcLanguageManager = new LanguageManager(this.metadataSerializer_, this.gameSettings.language);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:488: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.mcLanguageManager);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:489: error: class, interface, or enum expected
+    this.refreshResources();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:490: error: class, interface, or enum expected
+    this.renderEngine = new TextureManager(this.mcResourceManager);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:491: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.renderEngine);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:492: error: class, interface, or enum expected
+    this.drawSplashScreen(this.renderEngine);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:493: error: class, interface, or enum expected
+    this.initStream();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:494: error: class, interface, or enum expected
+    this.skinManager = new SkinManager(this.renderEngine, new File(this.fileAssets, "skins"), this.sessionService);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:495: error: class, interface, or enum expected
+    this.saveLoader = new AnvilSaveConverter(new File(this.mcDataDir, "saves"));
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:496: error: class, interface, or enum expected
+    this.mcSoundHandler = new SoundHandler(this.mcResourceManager, this.gameSettings);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:497: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.mcSoundHandler);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:498: error: class, interface, or enum expected
+    this.mcMusicTicker = new MusicTicker(this);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:499: error: class, interface, or enum expected
+    this.fontRendererObj = new FontRenderer(this.gameSettings, new ResourceLocation("textures/font/ascii.png"), this.renderEngine, false);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:501: error: class, interface, or enum expected
+    if (this.gameSettings.language != null)
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:504: error: class, interface, or enum expected
+        this.fontRendererObj.setBidiFlag(this.mcLanguageManager.isCurrentLanguageBidirectional());
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:505: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:508: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.fontRendererObj);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:509: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.standardGalacticFontRenderer);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:510: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(new GrassColorReloadListener());
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:511: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(new FoliageColorReloadListener());
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:512: error: class, interface, or enum expected
+    AchievementList.openInventory.setStatStringFormatter(new IStatStringFormat()
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:514: error: class, interface, or enum expected
+        public String formatString(String p_74535_1_)
+               ^
+src\minecraft\net\minecraft\client\Minecraft.java:519: error: class, interface, or enum expected
+            }
+            ^
+src\minecraft\net\minecraft\client\Minecraft.java:523: error: class, interface, or enum expected
+            }
+            ^
+src\minecraft\net\minecraft\client\Minecraft.java:526: error: class, interface, or enum expected
+    this.mouseHelper = new MouseHelper();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:527: error: class, interface, or enum expected
+    this.checkGLError("Pre startup");
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:528: error: class, interface, or enum expected
+    GlStateManager.enableTexture2D();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:529: error: class, interface, or enum expected
+    GlStateManager.shadeModel(7425);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:530: error: class, interface, or enum expected
+    GlStateManager.clearDepth(1.0D);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:531: error: class, interface, or enum expected
+    GlStateManager.enableDepth();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:532: error: class, interface, or enum expected
+    GlStateManager.depthFunc(515);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:533: error: class, interface, or enum expected
+    GlStateManager.enableAlpha();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:534: error: class, interface, or enum expected
+    GlStateManager.alphaFunc(516, 0.1F);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:535: error: class, interface, or enum expected
+    GlStateManager.cullFace(1029);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:536: error: class, interface, or enum expected
+    GlStateManager.matrixMode(5889);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:537: error: class, interface, or enum expected
+    GlStateManager.loadIdentity();
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:538: error: class, interface, or enum expected
+    GlStateManager.matrixMode(5888);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:539: error: class, interface, or enum expected
+    this.checkGLError("Startup");
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:540: error: class, interface, or enum expected
+    this.textureMapBlocks = new TextureMap("textures");
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:541: error: class, interface, or enum expected
+    this.textureMapBlocks.setMipmapLevels(this.gameSettings.mipmapLevels);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:542: error: class, interface, or enum expected
+    this.renderEngine.loadTickableTexture(TextureMap.locationBlocksTexture, this.textureMapBlocks);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:543: error: class, interface, or enum expected
+    this.renderEngine.bindTexture(TextureMap.locationBlocksTexture);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:544: error: class, interface, or enum expected
+    this.textureMapBlocks.setBlurMipmapDirect(false, this.gameSettings.mipmapLevels > 0);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:545: error: class, interface, or enum expected
+    this.modelManager = new ModelManager(this.textureMapBlocks);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:546: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.modelManager);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:547: error: class, interface, or enum expected
+    this.renderItem = new RenderItem(this.renderEngine, this.modelManager);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:548: error: class, interface, or enum expected
+    this.renderManager = new RenderManager(this.renderEngine, this.renderItem);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:549: error: class, interface, or enum expected
+    this.itemRenderer = new ItemRenderer(this);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:550: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.renderItem);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:551: error: class, interface, or enum expected
+    this.entityRenderer = new EntityRenderer(this, this.mcResourceManager);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:552: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.entityRenderer);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:553: error: class, interface, or enum expected
+    this.blockRenderDispatcher = new BlockRendererDispatcher(this.modelManager.getBlockModelShapes(), this.gameSettings);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:554: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.blockRenderDispatcher);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:555: error: class, interface, or enum expected
+    this.renderGlobal = new RenderGlobal(this);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:556: error: class, interface, or enum expected
+    this.mcResourceManager.registerReloadListener(this.renderGlobal);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:557: error: class, interface, or enum expected
+    this.guiAchievement = new GuiAchievement(this);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:558: error: class, interface, or enum expected
+    GlStateManager.viewport(0, 0, this.displayWidth, this.displayHeight);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:559: error: class, interface, or enum expected
+    this.effectRenderer = new EffectRenderer(this.theWorld, this.renderEngine);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:560: error: class, interface, or enum expected
+    this.checkGLError("Post startup");
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:561: error: class, interface, or enum expected
+    this.ingameGUI = new GuiIngame(this);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:563: error: class, interface, or enum expected
+    if (this.serverName != null)
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:566: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:570: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:573: error: class, interface, or enum expected
+    this.mojangLogo = null;
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:574: error: class, interface, or enum expected
+    this.loadingScreen = new LoadingScreenRenderer(this);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:576: error: class, interface, or enum expected
+    if (this.gameSettings.fullScreen && !this.fullscreen)
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:579: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:584: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:588: error: class, interface, or enum expected
+        this.gameSettings.saveOptions();
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:589: error: class, interface, or enum expected
+    }
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:592: error: class, interface, or enum expected
+}
+^
+src\minecraft\net\minecraft\client\Minecraft.java:596: error: <identifier> expected
+    this.metadataSerializer_.registerMetadataSectionType(new TextureMetadataSectionSerializer(), TextureMetadataSection.class);
+                                                                                                                             ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: illegal start of type
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+    ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: ';' expected
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+        ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: <identifier> expected
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+                                                        ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: illegal start of type
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+                                                         ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: ')' expected
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+                                                            ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: ';' expected
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+                                                                                          ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: illegal start of type
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+                                                                                           ^
+src\minecraft\net\minecraft\client\Minecraft.java:597: error: <identifier> expected
+    this.metadataSerializer_.registerMetadataSectionType(new FontMetadataSectionSerializer(), FontMetadataSection.class);
+                                                                                            ^
+100 errors

@@ -1,0 +1,17 @@
+***************
+*** 98,104 ****
+     }
+  
+     private List<File> func_110614_g() {
+-       return this.field_110618_d.isDirectory()?Arrays.asList(this.field_110618_d.listFiles(field_110622_a)):Collections.emptyList();
+     }
+  
+     public void func_110611_a() {
+--- 98,104 ----
+     }
+  
+     private List<File> func_110614_g() {
++       return this.field_110618_d.isDirectory()?Arrays.asList(this.field_110618_d.listFiles(field_110622_a)):Collections.<File>emptyList();
+     }
+  
+     public void func_110611_a() {

@@ -1,0 +1,11 @@
+***************
+*** 1,4 ****
+  package net.minecraft.util;
+  
+- public interface IObjectIntIterable extends Iterable {
+  }
+--- 1,4 ----
+  package net.minecraft.util;
+  
++ public interface IObjectIntIterable<V> extends Iterable<V> {
+  }

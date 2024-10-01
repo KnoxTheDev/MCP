@@ -1,0 +1,34 @@
+[17:47:01] [Client thread/INFO]: Setting user: lul
+[17:47:01] [Client thread/INFO]: (Session ID is token:0:00000000000000000000000000000000)
+[17:47:03] [Client thread/INFO]: LWJGL Version: 3.3.3-snapshot
+[17:47:04] [Client thread/INFO]: Reloading ResourceManager: Default
+[17:47:04] [Client thread/ERROR]: Couldn't initialize twitch stream
+[17:47:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:47:04] [Thread-4/INFO]: Initializing LWJGL OpenAL
+[17:47:04] [Thread-4/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:47:04] [Thread-4/INFO]: OpenAL initialized.
+[17:47:05] [Sound Library Loader/INFO]: Sound engine started
+[17:47:05] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:47:06] [Client thread/WARN]: Failed to load shader: minecraft:shaders/post/entity_outline.json
+kc: Invalid shaders/program/entity_sobel.fsh: Couldn't compile fragment program: 0:65: L0002: No matching function for call to 'texture2D'
+0:71: L0002: No matching function for call to 'texture2D'
+0:77: L0002: No matching function for call to 'texture2D'
+0:83: L0002: No matching function for call to 'texture2D'
+0:89: L0002: No matching function for call to 'texture2D'
+	at blt.a(SourceFile:67) ~[1.8.8.jar:?]
+	at blq.<init>(SourceFile:133) ~[1.8.8.jar:?]
+	at bls.<init>(SourceFile:29) ~[1.8.8.jar:?]
+	at blr.a(SourceFile:268) ~[1.8.8.jar:?]
+	at blr.a(SourceFile:138) ~[1.8.8.jar:?]
+	at blr.a(SourceFile:86) ~[1.8.8.jar:?]
+	at blr.<init>(SourceFile:52) ~[1.8.8.jar:?]
+	at bfr.b(SourceFile:225) [1.8.8.jar:?]
+	at ave.am(SourceFile:495) [1.8.8.jar:?]
+	at ave.a(SourceFile:310) [1.8.8.jar:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [1.8.8.jar:?]
+[17:47:13] [Client thread/INFO]: Stopping!
+[17:47:13] [Client thread/INFO]: SoundSystem shutting down...
+[17:47:13] [Client thread/ERROR]: Error in class 'SoundSystem'
+[17:47:13] [Client thread/ERROR]: Problem during Library.cleanup()!
+[17:47:13] [Client thread/INFO]: Ignoring errors... continuing clean-up.
+[17:47:13] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

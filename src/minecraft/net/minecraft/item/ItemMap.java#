@@ -1,0 +1,17 @@
+***************
+*** 149,155 ****
+                             i5 = 0;
+                          }
+  
+-                         MapColor mapcolor = (MapColor)Iterables.getFirst(Multisets.<T>copyHighestCountFirst(multiset), MapColor.field_151660_b);
+                          if(mapcolor == MapColor.field_151662_n) {
+                             d2 = (double)k3 * 0.1D + (double)(k1 + l1 & 1) * 0.2D;
+                             i5 = 1;
+--- 149,155 ----
+                             i5 = 0;
+                          }
+  
++                         MapColor mapcolor = (MapColor)Iterables.getFirst(Multisets.<MapColor>copyHighestCountFirst(multiset), MapColor.field_151660_b);
+                          if(mapcolor == MapColor.field_151662_n) {
+                             d2 = (double)k3 * 0.1D + (double)(k1 + l1 & 1) * 0.2D;
+                             i5 = 1;

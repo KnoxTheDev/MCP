@@ -1,0 +1,12 @@
+{
+  "analyticsFailcount": 0,
+  "profiles": {
+    "337d4d77-6f48-4828-b184-95e3c1c00e25": {
+      "lastVersionId": "1.8.8",
+      "logConfigIsXML": false,
+      "name": "(Default)",
+      "pojavRendererName": "opengles2"
+    }
+  },
+  "profilesWereMigrated": false
+}

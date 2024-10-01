@@ -1,0 +1,51 @@
+***************
+*** 237,243 ****
+        this.func_178121_a(Blocks.field_150346_d, new StateMapperBase() {
+           protected ModelResourceLocation func_178132_a(IBlockState p_178132_1_) {
+              Map<IProperty, Comparable> map = Maps.<IProperty, Comparable>newLinkedHashMap(p_178132_1_.func_177228_b());
+-             String s = BlockDirt.field_176386_a.func_177702_a((Comparable)map.remove(BlockDirt.field_176386_a));
+              if(BlockDirt.DirtType.PODZOL != p_178132_1_.func_177229_b(BlockDirt.field_176386_a)) {
+                 map.remove(BlockDirt.field_176385_b);
+              }
+--- 237,243 ----
+        this.func_178121_a(Blocks.field_150346_d, new StateMapperBase() {
+           protected ModelResourceLocation func_178132_a(IBlockState p_178132_1_) {
+              Map<IProperty, Comparable> map = Maps.<IProperty, Comparable>newLinkedHashMap(p_178132_1_.func_177228_b());
++             String s = BlockDirt.field_176386_a.func_177702_a((BlockDirt.DirtType)map.remove(BlockDirt.field_176386_a));
+              if(BlockDirt.DirtType.PODZOL != p_178132_1_.func_177229_b(BlockDirt.field_176386_a)) {
+                 map.remove(BlockDirt.field_176385_b);
+              }
+***************
+*** 248,254 ****
+        this.func_178121_a(Blocks.field_150334_T, new StateMapperBase() {
+           protected ModelResourceLocation func_178132_a(IBlockState p_178132_1_) {
+              Map<IProperty, Comparable> map = Maps.<IProperty, Comparable>newLinkedHashMap(p_178132_1_.func_177228_b());
+-             String s = BlockStoneSlab.field_176556_M.func_177702_a((Comparable)map.remove(BlockStoneSlab.field_176556_M));
+              map.remove(BlockStoneSlab.field_176555_b);
+              String s1 = ((Boolean)p_178132_1_.func_177229_b(BlockStoneSlab.field_176555_b)).booleanValue()?"all":"normal";
+              return new ModelResourceLocation(s + "_double_slab", s1);
+--- 248,254 ----
+        this.func_178121_a(Blocks.field_150334_T, new StateMapperBase() {
+           protected ModelResourceLocation func_178132_a(IBlockState p_178132_1_) {
+              Map<IProperty, Comparable> map = Maps.<IProperty, Comparable>newLinkedHashMap(p_178132_1_.func_177228_b());
++             String s = BlockStoneSlab.field_176556_M.func_177702_a((BlockStoneSlab.EnumType)map.remove(BlockStoneSlab.field_176556_M));
+              map.remove(BlockStoneSlab.field_176555_b);
+              String s1 = ((Boolean)p_178132_1_.func_177229_b(BlockStoneSlab.field_176555_b)).booleanValue()?"all":"normal";
+              return new ModelResourceLocation(s + "_double_slab", s1);
+***************
+*** 257,263 ****
+        this.func_178121_a(Blocks.field_180388_cO, new StateMapperBase() {
+           protected ModelResourceLocation func_178132_a(IBlockState p_178132_1_) {
+              Map<IProperty, Comparable> map = Maps.<IProperty, Comparable>newLinkedHashMap(p_178132_1_.func_177228_b());
+-             String s = BlockStoneSlabNew.field_176559_M.func_177702_a((Comparable)map.remove(BlockStoneSlabNew.field_176559_M));
+              map.remove(BlockStoneSlab.field_176555_b);
+              String s1 = ((Boolean)p_178132_1_.func_177229_b(BlockStoneSlabNew.field_176558_b)).booleanValue()?"all":"normal";
+              return new ModelResourceLocation(s + "_double_slab", s1);
+--- 257,263 ----
+        this.func_178121_a(Blocks.field_180388_cO, new StateMapperBase() {
+           protected ModelResourceLocation func_178132_a(IBlockState p_178132_1_) {
+              Map<IProperty, Comparable> map = Maps.<IProperty, Comparable>newLinkedHashMap(p_178132_1_.func_177228_b());
++             String s = BlockStoneSlabNew.field_176559_M.func_177702_a((BlockStoneSlabNew.EnumType)map.remove(BlockStoneSlabNew.field_176559_M));
+              map.remove(BlockStoneSlab.field_176555_b);
+              String s1 = ((Boolean)p_178132_1_.func_177229_b(BlockStoneSlabNew.field_176558_b)).booleanValue()?"all":"normal";
+              return new ModelResourceLocation(s + "_double_slab", s1);
